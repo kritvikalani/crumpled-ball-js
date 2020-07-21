@@ -41,12 +41,11 @@ function draw() {
   paper.display();
   ground.display();
 
-  keyPressed();
   drawSprites();
 }
 
 function keyPressed() {
   if (keyCode === UP_ARROW) { 
-    Body.applyForce(paper.body, paper.body.position, {x:1,y:-1});
+    Body.applyForce(paper.body, paper.body.position, {x:15,y:-15});
   }
 }
